@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e81d008db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card text-center">
+          <h3 class="heading">Loan Calculator</h3>
+        </div>
+        <form id="loan-form">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input
+                type="numbers"
+                placeholder="Loan Amount"
+                class="form-control"
+                id="amount"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">%</span>
+              <input
+                type="numbers"
+                placeholder="Loan Interest"
+                class="form-control"
+                id="interest"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="numbers"
+              placeholder="Years to repay"
+              class="form-control"
+              id="years"
+            />
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-info btn-block" />
+          </div>
+        </form>
+        <div class="spin">
+          <div class="fa-7x">
+            <i class="fas fa-spinner fa-pulse"></i>
+          </div>
+        </div>
+        <div id="results">
+          <div class="card text-center">
+            <h4>Results</h4>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">Monthly Payment</span>
+              <input type="numbers" id="monthly-payment" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">Total Payment</span>
+              <input type="numbers" id="total-payment" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">Total Interest</span>
+              <input type="numbers" id="total-interest" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

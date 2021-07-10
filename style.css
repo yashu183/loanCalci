@@ -1,0 +1,50 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    background-color:#3d3d3d;
+}
+
+.row
+{
+    width:50%;
+    background-color: #f3f3f3;
+    height: auto;
+    margin: 8% auto;
+}
+
+.col
+{
+    width: 100%;
+    height: auto;
+}
+
+.form-group
+{
+    padding: 0 10px;
+}
+
+#results
+{
+    display: none;
+}
+
+.fa-7x
+{
+    text-align: center;
+}
+
+.spin
+{
+    display: none;
+}
+
+@media screen and (max-width : 768px) and (min-width : 320px){
+    .row{
+        width: 90%;
+        margin : auto;
+    }
+}
